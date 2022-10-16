@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>Авторизация</h1>
+  <form
+    [formGroup]="form"
+    (ngSubmit)="onSubmit()"
+  >
+    <div class="form-box">
+      <div class="form-group"  >
+        <label class="text-label" ><b>Email</b></label>
+        <input class="text-input"  formControlName="email" placeholder="Enter Email"  name="email" id="email" >
+
+      </div>
+
+      <div class="form-group" >
+
+
+        <label class="text-label" ><b>Password</b></label>
+        <input class="text-input" formControlName="password" type="password" placeholder="Enter Password"  name="password" id="password" >
+      </div>
+
+      <button class="form-button" type="submit"    name="form_auth_submit">Войти</button>
+
+      <button class="form-button-reg" routerLinkActive="active" ><a routerLink="/registration">Зарегистрироваться</a></button>
+    </div>
+
+  </form>
+</div>
